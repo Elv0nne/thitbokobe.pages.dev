@@ -19,18 +19,18 @@ export async function onRequestGet({ env, request, waitUntil }) {
 
 async function fetchData(env) {
     const query = `{
-        a: repository(owner: "AutumnVN", name: "chino.pages.dev") { stargazers { totalCount } forks { totalCount } }
-        b: repository(owner: "AutumnVN", name: "stelladb") { stargazers { totalCount } forks { totalCount } }
-        c: repository(owner: "AutumnVN", name: "userplugins") { stargazers { totalCount } forks { totalCount } }
-        d: repository(owner: "AutumnVN", name: "themes") { stargazers { totalCount } forks { totalCount } }
-        e: repository(owner: "AutumnVN", name: "highlight") { stargazers { totalCount } forks { totalCount } }
-        f: repository(owner: "AutumnVN", name: "userscript") { stargazers { totalCount } forks { totalCount } }
-        g: repository(owner: "AutumnVN", name: "autumn") { stargazers { totalCount } forks { totalCount } }
-        h: repository(owner: "AutumnVN", name: "osu-mpbd") { stargazers { totalCount } forks { totalCount } }
-        i: repository(owner: "AutumnVN", name: "osu-ubu") { stargazers { totalCount } forks { totalCount } }
-        j: repository(owner: "AutumnVN", name: "bot") { stargazers { totalCount } forks { totalCount } }
+        a: repository(owner: "Elv0nne", name: "thitbokobe.pages.dev") { stargazers { totalCount } forks { totalCount } }
+        b: repository(owner: "Elv0nne", name: "stelladb") { stargazers { totalCount } forks { totalCount } }
+        c: repository(owner: "Elv0nne", name: "userplugins") { stargazers { totalCount } forks { totalCount } }
+        d: repository(owner: "Elv0nne", name: "themes") { stargazers { totalCount } forks { totalCount } }
+        e: repository(owner: "Elv0nne", name: "highlight") { stargazers { totalCount } forks { totalCount } }
+        f: repository(owner: "Elv0nne", name: "userscript") { stargazers { totalCount } forks { totalCount } }
+        g: repository(owner: "Elv0nne", name: "autumn") { stargazers { totalCount } forks { totalCount } }
+        h: repository(owner: "Elv0nne", name: "osu-mpbd") { stargazers { totalCount } forks { totalCount } }
+        i: repository(owner: "Elv0nne", name: "osu-ubu") { stargazers { totalCount } forks { totalCount } }
+        j: repository(owner: "Elv0nne", name: "bot") { stargazers { totalCount } forks { totalCount } }
 
-        z: user(login: "AutumnVN") {
+        z: user(login: "Elv0nne") {
             repositories(first: 100, ownerAffiliations: OWNER) {
                 nodes {
                     stargazerCount
