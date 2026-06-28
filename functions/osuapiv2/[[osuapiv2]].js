@@ -5,7 +5,7 @@ export async function onRequestGet({ env, request }) {
             'accept': 'application/json',
             'content-Type': 'application/x-www-form-urlencoded',
         },
-        body: `client_id=23616&client_secret=${env.OSU_CLIENT_SECRET}&grant_type=client_credentials&scope=public`
+        body: `client_id=61631&client_secret=${env.OSU_CLIENT_SECRET}&grant_type=client_credentials&scope=public`
     }).then(res => res.json());
 
     const response = await fetch(`https://osu.ppy.sh/api/v2/${request.url.replace(/^.+?osuapiv2\//, '')}`, {
