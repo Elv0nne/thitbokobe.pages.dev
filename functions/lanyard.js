@@ -1,7 +1,7 @@
 export async function onRequestGet({ env, waitUntil }) {
     const value = Number((await env.COUNT.get('count')) || 0) + 1;
 
-    const originSvg = await fetch('https://lanyard.cnrad.dev/api/393694671383166998?showDisplayName=true&bg=0d1117&idleMessage=https://chino.pages.dev').then(r => r.text());
+    const originSvg = await fetch('https://lanyard.cnrad.dev/api/1363311902205415494?showDisplayName=true&bg=0d1117&idleMessage=https://thitbokobe-pages-dev.pages.dev/').then(r => r.text());
 
     const newSvg = originSvg.replace(/( width=")410((px)?" )/g, '$1350$2')
         .replace(/width: 400px;/g, 'width: 340px;')
