@@ -19,7 +19,7 @@ export async function onRequestGet({ request, waitUntil }) {
 }
 
 async function fetchData() {
-    const { data } = await fetch('https://api.lanyard.rest/v1/users/393694671383166998').then(r => r.json());
+    const { data } = await fetch('https://api.lanyard.rest/v1/users/1363311902205415494').then(r => r.json());
 
     return {
         discord_user: data.discord_user,
